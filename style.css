@@ -1,0 +1,262 @@
+html{
+    box-sizing: border-box;
+    font-family: sans-serif;
+    
+}
+
+*,
+*::after,
+*::before{
+    box-sizing: inherit;
+}
+
+body {
+    margin: 0;
+    
+}
+
+/* estilos del header */
+
+.header {
+    background-color: skyblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+    height: 5rem;
+}
+
+.title {
+    text-align: center;
+}
+
+/* presentaciones de los temas  */
+
+.presentation {
+    position: fixed;
+    
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 995;
+    background-color: #AED7ED;
+    transition: transform 500ms ease-in;          
+    display: flex;
+
+}
+
+/* po xd */
+
+.po-png {
+    height: 35rem;
+    width: 40rem;
+    position: absolute;
+    display: block;
+    opacity: 1;
+    z-index: 990;
+    bottom: 2rem;
+    right: 1.5rem;
+    z-index: 995; 
+                                                  
+}
+
+.po-img {
+    display: none;
+    height: 35rem;
+    width: 30rem;
+    position: absolute;
+    z-index: 990;
+    bottom: 1.5rem;
+    right: 6rem;
+    z-index: 995; 
+}
+
+.po-png img {
+    width: 100%;
+    height: 100%;
+    ;
+}
+
+.po-img img {
+    width: 100%;
+    height: 100%;
+    ;
+}
+
+.none {
+    display: none;
+}
+
+.block {
+    display: block;
+}
+
+.po-words {
+    z-index: 995;
+    width: 50%;
+    position: absolute;
+    left: 5%;
+    top: 25%;
+    background-color: #F7F3E3;
+    padding: 0.5rem;
+    display: flex;
+    box-shadow: 3.5px 3.5px 2.5px #757575;
+}
+
+/* animaciones :3 */
+
+
+.mover-left {
+    transform: translate(-100%, 0);
+}
+
+/* boton de next  */
+
+.boton-next {
+    position: absolute;
+    z-index: 995;
+    display: none;
+    top: 30%;
+    right: 45%;
+    height: 3rem;
+    width: 50%;
+    background-color: #3B352B;
+    color: #F7F3E3;
+    cursor: pointer;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 3.5px 3.5px 2.5px #757575;
+}
+
+/* acordeon */
+
+.acordeon {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;       
+}
+
+.acordeon-item {
+    margin-bottom: 10px;
+}
+
+.acordeon-button {
+    width: 100%;
+    padding: 15px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    text-align: left;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.acordeon-button:hover {
+    background-color: #0056b3;
+}
+
+.acordeon-content {
+    max-height: 0;
+    overflow: hidden;
+    background-color: #f1f1f1;
+    transition: max-height 0.3s ease;
+}
+
+.acordeon-content p {
+    padding: 15px;
+}
+
+/* contenido fisico */
+
+
+.home {
+    position: fixed;
+    z-index: 995;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-color: #ec9ebf;
+} 
+
+.cont-fisic {
+    border-right: 1px solid #3B352B;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    top: 20%;
+    left: 5%;
+    height: 20rem;
+    width: 30%;
+}
+
+.cont-mind {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    top: 20%;
+    left: 36%;
+    height: 20rem;
+    width: 30%;
+}
+
+.btn-fisic {
+    width: 10rem;
+    height: 3rem;
+    background-color: #d8568c;     
+    border: 1px solid black;             
+    color: inherit;       
+    padding: 0;              
+    font: inherit;            
+    cursor: pointer;
+    position: absolute;
+    bottom: 5%;
+    box-shadow: 3.5px 3.5px 2.5px #757575;
+}
+
+.btn-fisic:hover {
+    background-color: #ec307e;
+    box-shadow: none;
+}
+
+.btn-mind {
+
+    width: 10rem;
+    height: 3rem;
+    background-color: #d8568c;     
+    border: 1px solid black;             
+    color: inherit;       
+    padding: 0;              
+    font: inherit;            
+    cursor: pointer;
+    position: absolute;
+    bottom: 5%;
+    box-shadow: 3.5px 3.5px 2.5px #757575;
+}
+
+.btn-mind:hover {
+    background-color: #ec307e;
+    box-shadow: none;
+}
+
+.p-fisic,
+.p-mind {
+    position: absolute;
+    top: 21%;
+}
+
+.arbol {
+    background-image: url(img/arbolxd.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    right: 20px;
+    top: 13%;
+    width: 400px;
+    height: 450px;
+}
