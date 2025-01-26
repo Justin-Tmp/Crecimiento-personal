@@ -1,0 +1,121 @@
+html{
+    box-sizing: border-box;
+    font-family: sans-serif;
+    display: flex;
+    justify-content: center;
+    background-color: #C5A3E1;
+}
+
+*,
+*::after,
+*::before{
+    box-sizing: inherit;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+ 
+}
+
+.main-mind {
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+    padding: 1rem;
+    padding-top: 0;
+    width: 50rem;
+    height: 4000px;
+    /*box-shadow: 3.5px 3.5px 2.5px #757575;*/
+    background-color: #f4f4f4;
+    padding: 20px;
+    min-height: 2500px; 
+}
+
+.btn-back {
+    text-decoration: none;
+    color: inherit;
+    border: 1px solid black;
+    width: 3rem;
+    height: 3rem;
+    cursor: pointer;
+    position: fixed;
+    right: 14%;
+    top: 85%;
+}
+
+.img-hero {
+    background-image: url(../img/tortuga2.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: white;
+    display: flex;  
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 100vh;
+    position: sticky;
+    padding: 20px;
+    border: 20px solid#C5A3E1;
+    border-radius: 5%;
+}
+
+.hero-content {
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    background: rgba(0, 0, 0, 0.5); 
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.acordeon {
+    width: 100%;
+    max-width: 700px;
+    margin: 0 auto;       
+}
+
+.acordeon-item {
+    margin-bottom: 10px;
+}
+
+.acordeon-button {
+    width: 100%;
+    padding: 15px;
+    background-color: #9d81e9;
+    color: white;
+    border: none;
+    text-align: left;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.acordeon-button:hover {
+    background-color: #7042ee;
+}
+
+.acordeon-content {
+    max-height: 0;
+    overflow: hidden;
+    background-color: #f1f1f1;
+    transition: max-height 0.3s ease;
+}
+
+.acordeon-content p {
+    padding: 15px;
+}
+
+.content-panda-end {
+    display: flex;
+    justify-content: center;
+}
+
+.po-end  {
+    background-image: url(../img/poxd.png);
+    width:  250px;
+    height: 175px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
